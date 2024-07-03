@@ -10,7 +10,20 @@ buildSystemDetails:
   buildSystem: maven
   author: null
   createdAt: '2024-07-02 05:09:25'
-pipelines: {}
+pipelines:
+  pipelines/gem-p1:
+    name: gem-p1
+    description: ''
+    author: abhisheks+e2etests@prophecy.io
+    mode: batch
+    artefactID: ''
+    language: scala
+    createdAt: '2024-07-03 15:34:15'
+    datasets:
+      inputs: []
+      outputs: []
+    subgraphs: []
+    dependencies: {}
 datasets: {}
 templates: {}
 jobs: {}
@@ -30,6 +43,18 @@ gemContainer:
       gemType: ComponentGem
       dependencies: null
       createdAt: '2024-07-02 05:10:02'
+    gems/DummyGem:
+      name: DummyGem
+      category: Transform
+      subCategory: ''
+      description: null
+      author: abhisheks+e2etests@prophecy.io
+      mode: batch
+      files:
+      - src/main/scala/abhishekse2etestsprophecyioteam/rajatcustomgems/gems/DummyGem.scala
+      gemType: ComponentGem
+      dependencies: null
+      createdAt: '2024-07-03 15:35:29'
   dependencies: null
 functions:
   author: null
@@ -49,12 +74,12 @@ sqlSources: {}
 sqlUnreferencedSources: {}
 sqlPipeline: null
 dependencies:
-- modifiedAt: '2024-07-02T05:09:25.864414Z'
+- type: plibMaven
+  modifiedAt: '2024-07-03T15:34:26.657468Z'
   name: plibMaven
-  version: 8.0.17
-  id: '1318470472'
-  createdAt: '2024-07-02T05:09:25.864414Z'
-  type: plibMaven
+  version: 8.0.21
+  id: '450692077'
+  createdAt: '2024-07-03T15:34:26.657413Z'
 projectDependencies:
   '39':
     projectUID: 39
